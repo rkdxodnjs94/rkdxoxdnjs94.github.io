@@ -1,0 +1,66 @@
+.fa-burn{
+ display: block;
+ margin-right: auto;
+ margin-left: auto;
+}
+/* psuedo-element :: 내부의 일부분만 스타일 줄 때
+(숨겨진요소 스타일 줄 때)
+: 한개는 class 
+first-letter 첫 글자, line 첫 줄 
+::after(before) 내부 맨 뒤(앞)에 뭔가 추가할 때 
+content: '';
+display: block;
+clear: both;
+float: none; */
+.psuedo::first-letter {
+  color: red;
+  font-size: 30px;
+}
+.pill {
+  max-width: 500px;
+  display: inline-block;
+  border: 1px solid lightgrey;
+  border-radius: 100px;
+  padding: 3px 12px 5px 12px;
+  margin-right: 2px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+/* 크롬, 사파리, 엣지에서만 적용되는 스타일 : webkit 
+ms : explorer, moz: Firefox */
+input[type=file]::-webkit-file-upload-button {
+  background: skyblue;
+  border: none;
+}
+input::-webkit-input-placeholder {
+  color: red;
+}
+/* appearance : 기본css 안보이게 */
+input[type=range] {
+  appearance: none;
+}
+input[type=range]::-webkit-slider-thumb {
+  appearance: none;
+  background: red;
+  width: 50px;
+  height: 50px;
+}
+progress {
+  appearance: none;
+}
+progress::-webkit-progress-bar {
+  appearance: none;
+  border: 1px solid black;
+  background: white;
+  border-radius: 10px;
+}
+progress::-webkit-progress-value {
+  appearance: none;
+  background: lightgreen;
+  border-radius: 10px;
+}
+@media screen and (min-width:1200px) {
+  .borderline {
+    border-left: 2px solid grey;
+  }
+}

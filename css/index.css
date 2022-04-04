@@ -1,0 +1,120 @@
+body {
+    margin: 0px;
+}
+div {
+    box-sizing: border-box;
+}
+.profile {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title {
+    text-align: center;
+}
+.content {
+    color: red;
+    text-align: center;
+}
+.jobstyle {
+    color: red;
+    font-weight: 700;
+}
+.box {
+    width: 200px;
+    background-color: cadetblue;
+    margin: 10px;
+    padding: 40px;
+    border: 4px solid black;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    box-shadow: 5px 5px 5px 0 black;
+}
+.container {
+    width: 800px;
+}
+.header {
+    width: 100%; /* 부모태그 width의 100% */
+    height: 100px;
+    background: aquamarine;
+}
+.right {
+    width: 80%;
+    height: 400px;
+    background: coral;
+    /* float: left; */
+    display: inline-block; /* 내 크기만큼 한 행을 차지(단, div를 한행으로 몰아야함) */
+}
+.left-menu {
+    width: 20%;
+    height: 400px;
+    background: cornflowerblue;
+    /* float: left; 요소를 붕 띄워서 왼쪽정렬(공중에 떠있음) */
+    display: inline-block;
+    vertical-align: top; /* inline요소에서만 쓸 수 있음, */
+    /* 모든 글에 baseline이 있어 파란 사진을 글자로 인식해버리게 되어 짤려보임. */
+}
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: grey;
+    /* clear: both;  float로 인해 두개 다 공중에 붕떠있어서 header 다음 위치로 있음 */
+}
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url(../myprofile.jpeg), url();
+    background-size: cover; /* 화면 꽉차게 하기 100%, cover(짤려도 좋으니 꽉차게) */
+    /* contain(안짤리게끔 하기) */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* 스크롫시 위치 조정 가능 */
+    filter: brightness(80%) ; /* 박스에 보정입히기(글씨에도 입혀짐) */
+    padding: 1px; /* margin 병합 현상 방지 */
+    position: relative; /* 부모 */
+
+}
+.main-title {
+    color: white;
+    font-size: 40px;
+    margin-top: 100px; /* 글씨랑 배경이랑 같이 옮겨짐 */
+    text-align: center;
+}
+.main-background p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.main-button{
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    position: absolute; /* 얘도 공중에 띄울 수 잇음, 좌표이동가능 */
+    width: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 5;
+    
+}
+.explain-box{
+    width: 80%;
+    max-width: 600px; /* width % 문제 해결, height도 가능(content영역) */
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #eee;
+    position: relative;
+    top: -70px;
+    z-index: 1;
+    box-sizing: border-box; /* width가 padding, border 포함(content-box: content영역만) */
+}
+input[type=text] {
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid red;
+    border-radius: 5px;
+}

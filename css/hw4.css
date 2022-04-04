@@ -1,0 +1,143 @@
+body {
+  margin: auto;
+}
+div {
+  box-sizing: border-box;
+}
+.background {
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+  background: rgb(91,85,194);
+  background: linear-gradient(0deg, rgba(91,85,194,1) 0%, rgba(127,127,184,1) 46%, rgba(0,212,255,1) 100%);
+}
+.landing-box1 {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  flex-wrap: wrap;
+}
+.landing-item {
+  margin-bottom: 50%;
+}
+.showmore {
+  width: 15vw;
+  max-width: 130px;
+  height: 5vh;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: hsl(240, 1%, 25%);
+  font-size: 1em;
+  color: white;
+}
+.iphone {
+  width: 500px;
+  height: 700px;
+  margin-bottom: 30%;
+}
+.iphone img {
+  width: 50%;
+  display: block;
+  margin: 0;
+  position: relative;
+  left: 30%;
+  top: 20%;
+}
+.landing-box2 {
+  padding: 40px;
+  text-align: center;
+  background: white;
+}
+.landing-box3 {
+  text-align: center;
+  color: white;
+}
+.layout-wrap {
+  width: 90vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.layout-item {
+  width: 24vw;
+  height: 33vh;
+}
+.layout-item i {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background: white;
+  color: rgba(127,127,184,1);
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+.landing-box4 {
+  background: white;
+  width: 93vw;
+  height: 100vh;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.box4-images1 {
+  float: left;
+  width: 46vw;
+  height: 35vh;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../img/portfolio-1.jpeg);
+  background-size: cover;
+  margin: auto;
+}
+.white-box{
+  position: absolute;
+  width: 82vh;
+  height: 35vh;
+  z-index: 2;
+  border: 0px solid white;
+  transition: all 1s;
+}
+.white-box:hover {
+  border: 25px solid white;
+}
+.box4-images2 {
+    float: left;
+    width: 46vw;
+    height: 35vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../img/portfolio-2.jpeg);
+    background-size: cover;
+    margin: auto;
+}
+.box4-images3 {
+    float: left;
+    width: 46vw;
+    height: 35vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../img/portfolio-3.jpeg);
+    background-size: cover;
+    margin: auto;
+}
+.box4-images4 {
+    float: left;
+    width: 46vw;
+    height: 35vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../img/portfolio-4.jpeg);
+    background-size: cover;
+    margin: auto;
+}
+.imtext {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  z-index: 1;
+  text-align: left;
+}
+.imtext p {
+  font-size: 20px;
+  width: 100vw;
+}
+h4, p {
+  padding: 30px;
+}

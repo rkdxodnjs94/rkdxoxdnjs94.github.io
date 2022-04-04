@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/hw3.css">
+    <!-- fontawesome 5 cdnjs 링크 -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="./fontawesome 5.15.4/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="flex-item">Logo</div>
+    <div class="flex-item relstyle" style="flex-grow: 8">Products</div> <!-- 박스 크기 비율(상단바)로 설정 -->
+    <div class="flex-item relstyle" style="flex-grow: 1">Services</div>
+  </div>
+
+  <div class="background">
+    <div class="background-table">
+      <h2>Your Shopping Cart!!</h2>
+
+      <table class="cart-table">
+        <thead>
+          <tr style="width: 400px;">
+              <th colspan="2">ITEM</th>        
+              <th>AMOUNT</th>    
+              <th>PRICE</th>    
+              <th>TOTAL</th>    
+          </tr>
+        </thead>
+        <tr>
+          <td>IMG</td>
+          <td>
+              SONY<br>
+              <span style="vertical-align:middle;">FE 70-200 mm F2.8 GM OSS</span>
+            </td>
+          <td>1</td>
+          <td>1979.00</td>
+          <td>1979.00</td>
+        </tr>
+        <tr>
+          <td>IMG</td>
+          <td>SONY<br>
+            <span style="vertical-align:middle;">Sonnar T*E 24mm F1.8 ZA</span>
+          </td>
+          <td>1</td>
+          <td>989.00</td>
+          <td>989.00</td>
+        </tr>
+        <tr class="total">
+          <td colspan="5"><h2>2968.00</h2></td>
+        </tr>
+      </table>
+      <br>
+      <a href="#" class="custom-link">Edit your shopping cart</a>
+      <button class="choose-button">Choose payment method</button>
+    </div>
+  </div>
+  
+  <div class="layout">
+    <div class="layitem">
+      <i class="fas fa-shopping-cart fa-3x"></i>
+      <h3>Fast Shipping</h3>
+      <p>lorem ipsum</p>
+    </div>
+    <div class="layitem">
+      <i class="fas fa-thumbs-up fa-3x"></i>
+      <h3>Good Service</h3>
+      <p>lorem ipsum</p>
+    </div>
+    <div class="layitem">
+      <i class="fas fa-credit-card fa-3x"></i>
+      <h3>Free Coupons</h3>
+      <p>lorem ipsum</p>
+    </div>
+    <div class="layitem">
+      <i class="fas fa-gifts fa-3x"></i>
+      <h3>New Products</h3>
+      <p>lorem ipsum</p>
+    </div>
+  </div>
+
+  <div class="shop-bg">
+    <div class="shop-container">
+      <div class="shop-item"> 
+        <div sytle="position: relative;">
+          <div class="overlay-wrap">
+            <div class="overlay-black">
+              <span>$60</span>
+            </div>
+          </div>
+          <img src="img/product1-1.jpeg">
+        </div>
+      </div>
+      <div class="shop-item">
+        <img src="img/product2.jpeg">
+      </div>
+      <div class="shop-item">
+        <img src="img/product3.jpeg">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

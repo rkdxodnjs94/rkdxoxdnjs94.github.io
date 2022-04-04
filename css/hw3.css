@@ -1,0 +1,259 @@
+@font-face {
+  font-family: '이쁜폰트'; /* Google Fonts 폰트파일 호스팅 */
+  src: url(../font/NanumSquareR.woff);
+} /* 웹 내의 폰트를 모두에게 보여주는 법 */
+.flex-container {
+  display: flex; /* 부모에 주면 됩니다.(가로 배치) */
+  justify-content: center; /* 가운데 정렬 */
+  flex-direction: row; /* 가로정렬(column:세로정렬, 모바일) */
+  flex-wrap: wrap; /* width가 꽉차면 자동으로 세로정렬 */
+  height: 100px;
+  align-items: center; /* flex이용시 상하정렬 */
+  background-color: pink;
+  padding: 10px;
+}
+.flex-item {
+  width: 100px;
+  height: 80px;
+  background-color: pink;
+  margin: 10px;
+  font-size: 40px;
+  color: white;
+}
+.flex-item:nth-child(1) {
+  text-align: center;
+}
+.relstyle {
+  text-align: right;
+  margin-right: 5px;
+}
+body {
+  margin: auto;
+  font-family: '이쁜폰트'; /* 굴림 안되면 돋움, 안되면 애리얼 */
+  font-weight: 800; /* 굵기용 폰트 따로 다운 받으면 더욱 효과적 */
+}
+p, h4, h3, h2, h1, span {
+  transform: rotate(0.03deg) ; /* 확대할때 폰트 부드럽게 나오는 비법 */
+}
+div {
+  box-sizing: border-box;
+}
+h2 {
+  margin-left: 10%;
+}
+.background {
+  width: 100%;
+  height: 600px;
+  background-color: steelblue;
+  padding: 30px;
+}
+.background-table{
+  width: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+table {
+  border-collapse: collapse;
+  margin: auto; /* 가운데 정렬 */
+  background-color: white;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
+  text-align: center;
+  border-spacing: 0;
+}
+.cart-table th {
+  height: 20px;
+  border-bottom: 2px solid #c2d3de;
+}
+tr,td {
+  height: 40px;
+  padding: 10px;
+}
+.cart-table td {
+  padding: 15px;
+  border-bottom: 2px solid #c2d3de;
+}
+.cart-table th:nth-child(1) {
+    width: 600px; /* width 설정하면 자동으로 밑폭도 적용 */
+}
+a {
+  margin-left: 10%;
+}
+.total {
+  height: 30px;
+  text-align: right;
+}
+.choose-button {
+  padding: 15px;
+  color: white;
+  background-color: darkblue;
+  border-radius: 5px;
+  float: right;
+  margin-right: 10%;
+  cursor: pointer;
+}
+.choose-button:hover { 
+  background-color: chocolate; /* 마우스 갖다 대면 */
+}
+.choose-button:focus {
+  background-color: gray; /* 커서 찍혀 있을 때 */
+}
+.choose-button:active {
+  background-color: brown; /* 마우스 클릭 꾹 누르면 (h-f-a 순서대로) */
+}
+.input-test {
+  font-size: 20px;
+}
+.input-test:focus {
+  border: 2px solid red;
+}
+.custom-link {
+  text-decoration: none;
+}
+.custom-link:link {
+  color: skyblue; /* 방문전 링크 색 바꾸기 */
+}
+.custom-link:visited {
+  color: black; /* 방문후 링크색 바꾸기 */
+}
+/* vw(viewport 크기에 맞춰서 계산), vh(높이), rem(기본폰트사이즈에 비례), 
+em(내 폰트사이즈 비례) */
+.layout {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+.layitem {
+  margin: 10px;
+  text-align: center;
+  /* background-color: grey; */
+  width: 25vw;
+  height: 10vh;
+}
+h3 {
+  font-weight: 700;
+}
+.layitem i {
+  background-color: burlywood;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  padding-top: 25px;
+  box-sizing: border-box;
+  color: white;
+}
+.shop-bg {
+  background-color: #eee;
+  padding: 20px;
+}
+.shop-container { 
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+.overlay-wrap {
+  position: absolute;
+  display: block;
+  width: 31%;
+  height: 55%;
+  overflow: hidden; /* 넘치는부분 가려줌 */
+}
+.overlay-black { /* 시작 스타일 */
+  position: absolute;
+  width: 100%;
+  max-width: 1250px;
+  height: 100%;
+  max-height: 500px;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  margin-top: 70%;
+  overflow: hidden;
+  /* transition: all 0.5s; */
+  transition: all 1s;
+  /* 처음엔 빠르게, 나중엔 느리게 */
+  /* transition-timing-function: cubic-bezier(0, 1.05, .48, 1.01); */
+  /* transition-timing-function: cubic-bezier(1, -0.08, .95, .49) : 처음엔 느리게, 나중엔 빠르게 */
+}
+.overlay-wrap:hover .overlay-black { /* 최종 스타일 */
+  margin-top: 35%;
+  opacity: 1;
+}
+.shop-item {
+  width: 100%;
+  height: 60%;
+  padding: 10px;
+}
+.shop-item img {
+  width: 100%;
+  display: block; 
+}
+.shop-item span {
+  color:white;
+  font-size: 3em;
+  text-align: center;
+}
+/* 미디어 문법들은 항상 밑에!! */
+@media screen and (max-width: 1200px) { /* 태블릿용 */
+  .background-table {
+    font-size: 25px; /* 1200px 이하일 경우 이 명령 실행 */
+  }
+  .flex-item {
+    font-size: 12px;
+  }
+  .layout {
+    flex-wrap: wrap;
+  }
+  .layitem {
+    width: 33vw;
+  }
+  .overlap {
+    height: 20%;
+  }
+  .overlay-black {
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 220px;
+  }
+}
+@media screen and (max-width: 996px) {
+  .background-table {
+    font-size: 20px; /* 1200px 이하일 경우 이 명령 실행 */
+  }
+  .flex-item {
+    font-size: 15px;
+  }
+  .overlay-black {
+    width: 100%;
+    max-width: 220px;
+    height: 100%;
+    max-height: 140px;
+  }
+
+}
+@media screen and (max-width: 768px) { /* 모바일(576px 제한도 많이 씀) */
+  .background-table {
+    font-size: 18px; /* 1200px 이하일 경우 이 명령 실행 */
+  }
+  .flex-item {
+    font-size: 20px; 
+  }
+  .layitem {
+    width: 100vw;
+    height: 20vh;
+  }
+  .overlay-black {
+    width: 100%;
+    max-width: 216px;
+    height: 100%;
+    max-height: 140px;
+  }
+
+}
+
